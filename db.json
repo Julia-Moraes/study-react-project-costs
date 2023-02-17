@@ -1,0 +1,72 @@
+{
+  "projects": [
+    {
+      "0": {},
+      "name": "GRUB",
+      "budget": "12000",
+      "category": {
+        "id": "1",
+        "name": "Infraestrutura"
+      },
+      "cost": 2000,
+      "services": [
+        {
+          "name": "Contratar Dev",
+          "cost": "2000",
+          "description": "Contratação",
+          "id": "c284da58-8ed4-4538-8f19-1213aa59da5c"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "0": {},
+      "name": "Valkyr",
+      "budget": "15000",
+      "category": {
+        "id": "2",
+        "name": "Design"
+      },
+      "cost": 2500,
+      "services": [
+        {
+          "name": "Criar XD do projeto",
+          "cost": "2500",
+          "description": "Design",
+          "id": "beaffaed-ab2e-49e5-81ad-29a9fcf4987f"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "0": {},
+      "name": "Cast",
+      "budget": "3000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infraestrutura"
+    },
+    {
+      "id": 2,
+      "name": "Design"
+    },
+    {
+      "id": 3,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
+}
