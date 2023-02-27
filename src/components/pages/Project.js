@@ -75,16 +75,12 @@ function Project() {
   
       // maximum value validation
       if (newCost > parseFloat(project.budget)) {
-        console.log("Entrou no If")
         setMessage('Orçamento ultrapassado, verifique o valor do serviço!')
         setType('error')
         project.services.pop()
         return false
       }
   
-      console.log("Pulou o If")
-      console.log(project.cost)
-      console.log(lastServiceCost)
       // add service cost to project cost total
       project.cost = newCost
   

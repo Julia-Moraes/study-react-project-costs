@@ -1,6 +1,22 @@
-function ContactForm({handleSubmit, btnText, contactData}) {
+import { useState } from "react"
+import Input from "../form/Input"
+import SubmitButton from "../form/SubmitButton"
+
+function ContactForm({handleSubmit, btnText}) {
+
+    const [contact, setContact] = useState([])
+
+    const submit = (e) => {
+        e.preventDefault()
+        handleSubmit(contact)
+    }
+
+    function handleChange(e) {
+        setContact({ ...contact, [e.target.name] : e.target.value})
+    }
+
     return(
-        <form onSubmit={submit} className={styles.form}>
+        <form onSubmit={submit} >
             <Input 
                 type="text"
                 text="Insira seu nome"
@@ -24,8 +40,8 @@ function ContactForm({handleSubmit, btnText, contactData}) {
                 name="message"
                 placeholder="Mensagem"
                 handleOnChange={handleChange}
-                value={contact.message ? contact.message : ''} />
-            
+                value={contact.message ? contact.message : ''} 
+                />
             <SubmitButton text={btnText} /> 
         </form>
     )
